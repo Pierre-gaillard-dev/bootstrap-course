@@ -1,6 +1,9 @@
-import { FC, useState } from "react";
+import { FC, useContext, useState } from "react";
+import { DeviceContext } from "../contexts/device.context";
 
 const Restaurants: FC = () => {
+  const { isMobile } = useContext(DeviceContext);
+
   const [hoveredRestaurant, setHoveredRestaurant] = useState<
     "vannes" | "auray"
   >("vannes");
@@ -93,8 +96,13 @@ const Restaurants: FC = () => {
         <div className="col-12 position-absolute top-0 start-0 h-100 w-100 bg-light z-n1 rounded overflow-hidden"></div>
         <div
           className={
-            "col-6 position-absolute top-0 h-100 z-n1 rounded overflow-hidden p-0" +
-            (hoveredRestaurant === "vannes" ? " start-0" : " start-50")
+            "col-6 position-absolute top-0  z-n1 rounded overflow-hidden p-0" +
+            (isMobile ? " w-100 h-50" : " w-50 h-100") +
+            (hoveredRestaurant === "vannes"
+              ? " start-0 top-0"
+              : isMobile
+                ? " top-50"
+                : " start-50")
           }
           style={{ transition: "all 0.3s ease" }}
         >
