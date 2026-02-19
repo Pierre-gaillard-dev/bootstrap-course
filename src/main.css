@@ -14,3 +14,29 @@ p,
 span {
   font-family: "Inter", sans-serif;
 }
+
+.btn-primary {
+  --bs-btn-color: #fff;
+  --bs-btn-bg: #002c42;
+  --bs-btn-border-color: #002c42;
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: #001a2a;
+  --bs-btn-hover-border-color: #001a2a;
+  --bs-btn-focus-shadow-rgb: 0, 44, 66;
+  --bs-btn-active-color: #fff;
+  --bs-btn-active-bg: #001a2a;
+  --bs-btn-active-border-color: #001a2a;
+}
+
+.btn-white {
+  --bs-btn-color: #002c42;
+  --bs-btn-bg: #fff;
+  --bs-btn-border-color: #fff;
+  --bs-btn-hover-color: #002c42;
+  --bs-btn-hover-bg: #f8f9fa;
+  --bs-btn-hover-border-color: #f8f9fa;
+  --bs-btn-focus-shadow-rgb: 255, 255, 255;
+  --bs-btn-active-color: #002c42;
+  --bs-btn-active-bg: #f8f9fa;
+  --bs-btn-active-border-color: #f8f9fa;
+}
