@@ -15,6 +15,11 @@ span {
   font-family: "Inter", sans-serif;
 }
 
+:root {
+  --bs-primary: #002c42;
+  --bs-primary-rgb: 0, 44, 66;
+}
+
 .btn-primary {
   --bs-btn-color: #fff;
   --bs-btn-bg: #002c42;

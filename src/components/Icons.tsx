@@ -723,3 +723,33 @@ export const ChevronIcon: FC<IconProps> = ({ size = 24 }) => (
     />
   </svg>
 );
+
+export const MapPin: FC<IconProps> = ({ size = 24 }) => (
+  <svg
+    width={size}
+    height={size}
+    viewBox="0 0 24 24"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      d="M12 2C8.13401 2 5 5.13401 5 9C5 14.25 12 22 12 22C12 22 19 14.25 19 9C19 5.13401 15.866 2 12 2ZM12 11C10.3431 11 9 9.65685 9 8C9 6.34315 10.3431 5 12 5C13.6569 5 15 6.34315 15 8C15 9.65685 13.6569 11 12 11Z"
+      fill="currentColor"
+    />
+  </svg>
+);
+
+export const PhoneIcon: FC<IconProps> = ({ size = 24 }) => (
+  <svg
+    width={size}
+    height={size}
+    viewBox="0 0 24 24"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      d="M19.95 21C17.77 21 15.28 20.6 12.87 19.53C10.46 18.46 8.41 16.93 6.63 14.95C4.85 12.97 3.32 10.92 2.25 8.51C1.18 6.1 0.8 3.61 0.8 1.43C0.8 0.9 1.3 0.4 1.9 0.4H5.5C6 0.4 6.5 0.9 6.6 1.4L7.8 6.3C7.9 6.8 7.7 7.3 7.2 7.6L4.2 9.9C5.1 11.6 6.3 13.2 7.8 14.4C9.3 15.6 11 16.6 12.8 17.3L15.3 14.5C15.7 14 16.3 13.9 16.9 14.1L21.7 15.4C22.2 15.5 22.6 16 22.6 16.5V20.1C22.6 20.7 22.1 21.2 21.5 21.2C20.5 21.1 20.2 21 19.95 21Z"
+      fill="currentColor"
+    />
+  </svg>
+);
